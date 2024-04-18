@@ -54,3 +54,9 @@
 2. reducer / reducer'ların kurulumunu yap
 3. store'u oluştur
 4. store'u projeye tanıt
+
+# CRUD
+
+- Create Read Update Delete
+
+- Oluştur Oku Güncelle Sil
