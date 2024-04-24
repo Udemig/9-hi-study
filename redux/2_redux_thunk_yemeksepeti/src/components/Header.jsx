@@ -7,7 +7,7 @@ const Header = () => {
     <header className="shadow">
       <Container>
         <div className="flex justify-between items-center">
-          <Link className="text-2xl font-[900] font-mono text-red-500">
+          <Link to={'/'} className="text-2xl font-[900] font-mono text-red-500">
             Thunksepeti
           </Link>
 
