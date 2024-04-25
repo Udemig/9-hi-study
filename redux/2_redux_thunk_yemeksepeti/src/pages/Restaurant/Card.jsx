@@ -1,12 +1,23 @@
 import { FaPlus } from 'react-icons/fa';
-import { useDispatch } from 'react-redux';
-import { addToBasket } from '../../redux/actions/cartActions';
+import { useDispatch, useSelector } from 'react-redux';
+import { addToBasket, updateItem } from '../../redux/actions/cartActions';
 
 const Card = ({ product, restName }) => {
+  const { cart } = useSelector((store) => store.cart);
   const dispatch = useDispatch();
 
+  // mevut ürünü sepette arayalım
+  const found = cart.find((i) => i.productId === product.id);
+
+  // septe ekler
   const handleAdd = () => {
-    dispatch(addToBasket(product, restName));
+    // ürün eğer sepete daha önce eklendiyse miktarını arttır
+    if (found) {
+      dispatch(updateItem(found.id, found.amount + 1));
+    } else {
+      // sepette yoksa sepete ekle
+      dispatch(addToBasket(product, restName));
+    }
   };
 
   return (
@@ -27,7 +38,11 @@ const Card = ({ product, restName }) => {
           onClick={handleAdd}
           className="absolute end-2 bottom-2 bg-white rounded-full hover:bg-red-100 transition w-8 h-8 grid place-items-center"
         >
-          <FaPlus className="text-lg" />
+          {found ? (
+            <span className="font-bold">{found.amount}</span>
+          ) : (
+            <FaPlus className="text-lg" />
+          )}
         </button>
       </div>
     </div>

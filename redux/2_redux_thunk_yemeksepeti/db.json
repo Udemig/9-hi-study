@@ -297,49 +297,22 @@
   ],
   "cart": [
     {
-      "id": "40d16140-2aaf-4a25-a4d0-e80b6e0ca422",
+      "id": "f7815011-3087-42e3-b2cc-24547c52aac5",
       "productId": "1",
       "title": "Izgara Somon",
       "price": 45.99,
       "photo": "https://picsum.photos/200",
       "restaurantName": "Lezzetin Tadı",
+      "amount": 4
+    },
+    {
+      "id": "8832d947-e8c8-446a-ad0d-ade055164e49",
+      "productId": "1",
+      "title": "Izgara Somon",
+      "price": 45.99,
+      "photo": "https://picsum.photos/301",
+      "restaurantName": "Lezzetin Tadı",
       "amount": 2
-    },
-    {
-      "id": "40d16140-2aaf-4a25-a4d0-e80b6e0ca422",
-      "productId": "2",
-      "title": "Makarna",
-      "price": 25.99,
-      "photo": "https://picsum.photos/201",
-      "restaurantName": "Lezzet Diyarı",
-      "amount": 1
-    },
-    {
-      "id": "f6bf79e1-9faf-4c60-b0b5-aba8bf43936d",
-      "productId": "2",
-      "title": "Margarita Pizza",
-      "price": 12.99,
-      "photo": "https://picsum.photos/201",
-      "restaurantName": "Aromalı Ev",
-      "amount": 1
-    },
-    {
-      "id": "be5d8bdd-fcdf-4c1d-bb6b-be7aa811433f",
-      "productId": "111",
-      "title": "Mevsim Salata",
-      "price": 7.99,
-      "photo": "https://picsum.photos/212",
-      "restaurantName": "Aromalı Ev",
-      "amount": 1
-    },
-    {
-      "id": "e9f649c7-c5bf-42ac-9390-8cc21437a02c",
-      "productId": "24",
-      "title": "Çikolatalı Brownie",
-      "price": 8.99,
-      "photo": "https://picsum.photos/213",
-      "restaurantName": "Keyifli Mekan",
-      "amount": 1
     }
   ]
 }

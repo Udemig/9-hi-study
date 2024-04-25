@@ -5,7 +5,7 @@
 - axios
 - redux
 - react-redux
-- react-redux
+- redux-thunk
 - tailwind
 - react-icons
 

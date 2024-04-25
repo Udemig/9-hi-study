@@ -1,6 +1,7 @@
 import { v4 } from 'uuid';
 import api from '../../utils/api';
 import Actions from '../actionTypes';
+import { toast } from 'react-toastify';
 
 // 1) API'dan sepetteki verileri alıp reducer'a aktaran thunk aksiyonu
 export const getCart = () => (dispatch) => {
@@ -28,12 +29,43 @@ export const addToBasket = (product, restName) => (dispatch) => {
   };
 
   // b) elemanı api'a kaydet
-  api.post('/cart', newItem);
+  api
+    .post('/cart', newItem)
+    // c) api'dan olumlu cevap gelirse reducer'a haber ver ve bildirim gönder
+    .then(() => {
+      dispatch({ type: Actions.ADD_ITEM, payload: newItem });
 
-  // c) başarılı olursa reducer'a haber ver ve bildirim gönder
-  dispatch({ type: Actions.ADD_ITEM, payload: newItem });
+      toast.success(`${newItem.title} sepete eklendi`);
+    })
+    // d) api'dan hata gelirse  bildirim gönder
+    .catch(() => toast.error('Üzgünüz bir sorun oluştu'));
+};
 
-  alert('eleman sepete eklendi');
+// 3) Sepetteki Elemanı Güncelle (Miktar Arttırma | Azaltma)
+export const updateItem = (id, newAmount) => (dispatch) => {
+  // a) api'daki veriyi güncelle
+  api
+    .patch(`/cart/${id}`, { amount: newAmount })
+    // b) istek başarılı olursa reducer'a haber ver
+    .then((res) => {
+      dispatch({
+        type: Actions.UPDATE_ITEM,
+        payload: res.data,
+      });
 
-  // d) başarısız olursa bildirim gönder
+      toast.info(`Ürünün miktarı arttırıldı (${newAmount})`);
+    })
+    // c) istek başarısız olursa bildirim gönder
+    .catch(() => toast.error('Üzgünüz bir sorun oluştu'));
+};
+
+// 4) Elmanı sepetten kaldır
+export const deleteItem = (id) => (dispatch) => {
+  api
+    .delete(`/cart/${id}`)
+    .then(() => {
+      dispatch({ type: Actions.DELETE_ITEM, payload: id });
+      toast.warning('Ürün sepetten kaldırıldı');
+    })
+    .catch(() => toast.error('Üzgünüz bir sorun oluştu'));
 };
