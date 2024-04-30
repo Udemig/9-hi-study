@@ -9,13 +9,13 @@ const initialState = {
 const genreReducer = (state = initialState, { type, payload }) => {
   switch (type) {
     case Actions.GENRES_LOADING:
-      return state;
+      return { ...state, isLoading: true };
 
     case Actions.GENRES_ERROR:
-      return state;
+      return { ...state, isLoading: false, error: payload };
 
     case Actions.GENRES_SUCCESS:
-      return state;
+      return { ...state, isLoading: false, error: null, genres: payload };
 
     default:
       return state;

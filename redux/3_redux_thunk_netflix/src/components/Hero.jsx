@@ -1,6 +1,8 @@
 import { useSelector } from 'react-redux';
 import Loader from './Loader';
 import { baseImgUrl } from './../utils/constants';
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Hero = () => {
   const { isLoading, movies, error } = useSelector((store) => store.movie);
@@ -30,9 +32,12 @@ const Hero = () => {
             </p>
 
             <div className="flex gap-5">
-              <button className="p-2 bg-red-600 rounded hover:bg-red-700">
+              <Link
+                to={`/movie/${movie.id}`}
+                className="p-2 bg-red-600 rounded hover:bg-red-700"
+              >
                 Filmi İzle
-              </button>
+              </Link>
 
               <button className="p-2 bg-blue-600 rounded hover:bg-blue-700">
                 Listeye Ekle
@@ -52,4 +57,5 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+// Home sayfasında yapılan redux aboneliği bu bileşeni alakadar etmemesine rağmen bu bileşenin gereksiz yere fazladan render olmasına sebep oluyordu. bu bileşenin aldığı proplar veya içerisndeki state değişmedikçe render edilmesinin önüne geçtik
+export default React.memo(Hero);

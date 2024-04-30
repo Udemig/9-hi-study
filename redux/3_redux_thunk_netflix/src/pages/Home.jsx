@@ -1,9 +1,13 @@
 import { useEffect } from 'react';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { getGenres, getPopular } from '../redux/actions';
 import Hero from '../components/Hero';
+import Loader from '../components/Loader';
+import MovieList from '../components/MovieList';
 
 const Home = () => {
+  const { isLoading, genres, error } = useSelector((store) => store.genre);
+
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -14,6 +18,14 @@ const Home = () => {
   return (
     <div>
       <Hero />
+
+      {isLoading ? (
+        <Loader />
+      ) : error ? (
+        <Error />
+      ) : (
+        genres.map((genre) => <MovieList genre={genre} key={genre.id} />)
+      )}
     </div>
   );
 };
