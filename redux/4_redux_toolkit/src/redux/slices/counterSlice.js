@@ -10,7 +10,7 @@ import { createSlice } from '@reduxjs/toolkit';
 
 const counterSlice = createSlice({
   name: 'counter',
-  initialState: { count: 0, isDarkTheme: false },
+  initialState: { count: 0, isDarkTheme: true },
   // state'in nasıl değişiceğine karar veren fonksiyonları tanımalama
   reducers: {
     // 1.aksiyon
@@ -27,6 +27,11 @@ const counterSlice = createSlice({
     setCount: (state, action) => {
       state.count = action.payload;
     },
+
+    // 4.aksiyon
+    toggleTheme: (state) => {
+      state.isDarkTheme = !state.isDarkTheme;
+    },
   },
 });
 
@@ -34,4 +39,5 @@ const counterSlice = createSlice({
 export default counterSlice.reducer;
 
 // sliice'in oluşturduğu aksiyon oluşturan fonksiyonları bileşenlerde kullanabilmek için export edelim
-export const { decrease, increase, setCount } = counterSlice.actions;
+export const { decrease, increase, setCount, toggleTheme } =
+  counterSlice.actions;
