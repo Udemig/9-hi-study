@@ -62,6 +62,7 @@ header {
 
 .card-wrapper {
   display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   gap: 50px;
   padding: 20px;
 }
@@ -168,4 +169,14 @@ header {
 .filter-sec {
   @extend .container;
   margin: 30px auto 80px;
+}
+
+@media (max-width: 500px) {
+  .card-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .container form {
+    grid-template-columns: 1fr;
+  }
 }

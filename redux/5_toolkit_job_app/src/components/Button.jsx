@@ -1,6 +1,6 @@
-const Button = ({ text }) => {
+const Button = ({ text, type = 'submit' }) => {
   return (
-    <button className="c_button">
+    <button type={type} className="c_button">
       <span class="circle1"></span>
       <span class="circle2"></span>
       <span class="circle3"></span>

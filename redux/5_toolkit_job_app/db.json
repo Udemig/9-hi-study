@@ -73,13 +73,31 @@
       "date": 1714680517533
     },
     {
-      "id": "804e9c3f-a508-498d-94d6-30058a550830",
-      "position": "Frontend Developer",
-      "company": "Microsoft",
+      "id": "6df79445-7c26-44ae-a84d-58573353b47c",
+      "position": "Data Analyst",
+      "company": "Coca Cola",
       "location": "İzmir/Bayraklı",
-      "status": "Reddedildi",
+      "status": "Devam Ediyor",
       "type": "Yarı Zamanlı",
-      "date": 1714680984722
+      "date": 1715102448129
+    },
+    {
+      "position": "Marketing Manager",
+      "company": "Amazon",
+      "location": "İzmir/Bayraklı",
+      "status": "Mülakat",
+      "type": "Tam Zamanlı",
+      "id": "3ca15fb5-cff8-464d-bb6e-bc244d22edfa",
+      "date": 1715104409300
+    },
+    {
+      "position": "Data Scientist",
+      "company": "Zorro",
+      "location": "Menlo Park",
+      "status": "Mülakat",
+      "type": "Tam Zamanlı",
+      "id": "46b7da48-67af-45c6-9dfe-5d327d24cab8",
+      "date": 1715104431342
     }
   ]
 }

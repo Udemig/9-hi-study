@@ -44,7 +44,7 @@ const Card = ({ job }) => {
 
         <div className="field">
           <FaCalendarDays />
-          <p>{job.date}</p>
+          <p>{new Date(job.date).toLocaleDateString()}</p>
         </div>
 
         <div className="status">
