@@ -6,3 +6,4 @@
 - bootstrap
 - leaflet
 - react-leaflet
+- react-paginate

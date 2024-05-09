@@ -16,7 +16,16 @@ const App = () => {
   const dispatch = useDispatch();
 
   useEffect(() => {
+    // sayfa ilk açıldığında uçuşları al
     dispatch(getFlights());
+
+    // ardından her 5 saniyede bir uçuşları al
+    const intervalId = setInterval(() => {
+      dispatch(getFlights());
+    }, 50000);
+
+    // componentWillUnmout (bileşenin ekrandan gitme olayı) çalışırsa sayacı durdur
+    return () => clearInterval(intervalId);
   }, []);
 
   return (
@@ -38,7 +47,11 @@ const App = () => {
         </button>
       </div>
 
-      {isMapView ? <MapView setDetailId={setDetailId} /> : <ListView />}
+      {isMapView ? (
+        <MapView setDetailId={setDetailId} />
+      ) : (
+        <ListView setDetailId={setDetailId} />
+      )}
 
       {detailId && (
         <Modal detailId={detailId} close={() => setDetailId(null)} />

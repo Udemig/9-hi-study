@@ -1,16 +1,26 @@
 import 'leaflet/dist/leaflet.css';
-import { useSelector } from 'react-redux';
-import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
+import { useDispatch, useSelector } from 'react-redux';
+import {
+  MapContainer,
+  TileLayer,
+  Marker,
+  Popup,
+  Polyline,
+} from 'react-leaflet';
 import { icon } from 'leaflet';
+import { setPath } from '../redux/slices/flightSlice';
 
 const MapView = ({ setDetailId }) => {
-  const { flights } = useSelector((store) => store.flightReducer);
+  const { flights, path } = useSelector((store) => store.flightReducer);
+  const dispatch = useDispatch();
 
   // market için kendi iconumuzu oluşturduk
   const planeIcon = icon({
     iconUrl: 'plane-icon.png',
     iconSize: [30, 30],
   });
+
+  console.log(path);
 
   return (
     <MapContainer center={[39.09, 35.44]} zoom={7} scrollWheelZoom={true}>
@@ -29,10 +39,15 @@ const MapView = ({ setDetailId }) => {
             <div className="d-flex flex-column gap-2">
               <span>Kod: {flight.code}</span>
               <button onClick={() => setDetailId(flight.id)}>Detay</button>
+              <button onClick={() => dispatch(setPath([]))}>
+                Rotayı Temizle
+              </button>
             </div>
           </Popup>
         </Marker>
       ))}
+
+      <Polyline positions={path} />
     </MapContainer>
   );
 };
