@@ -34,3 +34,15 @@
 ## BDD (Behaviour Driven Development)
 
 - Önce özellik geliştirilir ardından testleri yazılır
+
+# FireEvent
+
+- rtl içerisinde gelen olay tetikleme methodu
+- gerçek kullanıcadan uzak tepkiler verdiği içiçn yerini userEvent'e bıraktı
+- tetiklenen olaylar gerçek bir insanın tepkisinden çok daha hızlı bir şekilde aniden gerçekleştiği için testelerde tutarsılıklara sebep olabiliyor
+
+# UserEvent
+
+- bu yolu kullanmak için userEvent paketi indrilmeli
+- firevent daha morden / gelişmiş versiyonu
+- testiklediğimiz olaylar fireevnt gibi doğrudan tetiklenmesi yerine gerçek bir kullanıcyı simüle ederek bir fecikmenin ardından tetiklenir
