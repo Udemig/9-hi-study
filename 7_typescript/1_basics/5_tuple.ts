@@ -43,3 +43,7 @@ date = [10, "Ocak"];
 date = [10];
 
 date = [10, undefined, 1999];
+
+// Gerçek projede tuple
+
+// const [state, setState]: [string, (value: string) => void] = useSpecialState("");
