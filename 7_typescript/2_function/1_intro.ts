@@ -61,3 +61,24 @@ exaFunc(99);
 (function (par: number) {
   console.log(par + " immediate call func çağrıldı");
 })(99);
+
+// SORU: Fonksiyonun tipini tanımlarken kendi oluşturduğumuz tipleri de kullanabiklir miyiz?
+
+// CEVAP: Evet, fonksiyon paramtre ve reeturn tipi tanımlarken kendi oluşturdığımuz tipleri kullanabiliriz.
+
+// ÖRNEK:
+
+type UserType = {
+  name: string;
+  surname: string;
+  age?: number;
+};
+
+let createUsers = (user: UserType): UserType[] => {
+  return [user, user, user, user];
+};
+
+createUsers({
+  name: "Fuat",
+  surname: "Sarı",
+});
