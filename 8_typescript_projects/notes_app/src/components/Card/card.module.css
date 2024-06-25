@@ -1,0 +1,24 @@
+/*
+ * Module CSS
+ * Bu kullanımda her css dosayası bir modül yapısındadır ve tek bir bileşen özeldir.
+
+ * class isimlendiriken acaba bu class ismi daha önce farklı bir yerde kullanıldımı diye dert etmeye gerek kalmıyor. çünkü module css'de tanımlanana class ismini bir yerde import edildiğinde benzersiz bir classname oluşturur.
+
+ not: class ismi tanımlarken bu class nesnenin içerisnde bir property olucağı için genelde özel karaketer tercih etmeyiz
+
+*/
+
+.background {
+  background: red;
+  box-shadow: 0 0 20px red;
+}
+
+.note_card {
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.note_card:hover {
+  transform: translate(10px, -10px);
+  filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.3));
+}
