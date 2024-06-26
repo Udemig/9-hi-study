@@ -11,11 +11,14 @@ const CustomForm = ({
   availableTags,
   handleSubmit,
   createTag,
+  markdown = "",
+  title = "",
+  tags = [],
 }: CreateProps) => {
   const navigate = useNavigate();
 
   // state
-  const [selectedTags, setSelectedTags] = useState<Tag[]>([]);
+  const [selectedTags, setSelectedTags] = useState<Tag[]>(tags);
 
   // form elemanlarının refaransının al
   const inputRef = useRef<HTMLInputElement>(null);
@@ -45,7 +48,7 @@ const CustomForm = ({
           <Col>
             <Form.Group>
               <Form.Label>Başlık</Form.Label>
-              <Form.Control ref={inputRef} />
+              <Form.Control defaultValue={title} ref={inputRef} />
             </Form.Group>
           </Col>
           <Col>
@@ -76,6 +79,7 @@ const CustomForm = ({
         <Form.Group className="mt-4">
           <Form.Label>İçeirk (markdown destekler)</Form.Label>
           <Form.Control
+            defaultValue={markdown}
             ref={textareaRef}
             as="textarea"
             style={{ minHeight: "300px", maxHeight: "500px" }}
