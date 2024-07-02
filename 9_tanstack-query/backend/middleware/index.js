@@ -1,10 +1,10 @@
-const { getData } = require('../utils/getData');
+const { getData } = require("../utils/getData");
 
 const data = getData();
 
 exports.controlId = (req, res, next) => {
   // id'si bilenen tarifi bul
-  const recipe = data.find((i) => i.id === req.params.id);
+  const recipe = data.find((i) => i.id == req.params.id);
 
   // tarif dizide bulunamazsa hata gönder
   if (!recipe) {

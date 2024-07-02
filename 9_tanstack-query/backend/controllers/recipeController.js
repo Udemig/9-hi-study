@@ -25,7 +25,7 @@ exports.getAllRecipes = (req, res) => {
 
   if (location) {
     recipes = data.filter((recipe) =>
-      recipe.location.toLowerCase().includes(location)
+      recipe.location.toLowerCase().includes(location.toLowerCase())
     );
   }
 

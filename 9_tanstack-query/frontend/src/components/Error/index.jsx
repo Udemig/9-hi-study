@@ -1,4 +1,14 @@
-const Error = ({ info, retry }) => {
+import { useQueryClient } from "@tanstack/react-query";
+
+const Error = ({ info, queryKey }) => {
+  // kurulum
+  const queryClient = useQueryClient();
+
+  // places sorgusunu tekrar çalıştırmaya yarayan fonksiyon
+  const retry = () => {
+    queryClient.invalidateQueries({ queryKey: [queryKey] });
+  };
+
   return (
     <>
       <div className="mt-10 bg-red-500 rounded-lg p-4 text-white font-semibold text-center">
