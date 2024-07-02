@@ -32,8 +32,15 @@ const Main = ({ notes, availableTags }: Props) => {
   return (
     <div className="container mx-auto py-5">
       {/* Üst Kısım */}
-      <Stack direction="horizontal" className="justify-content-between">
-        <h1>Notlar</h1>
+      <Stack direction="horizontal" className="justify-content-between mb-4">
+        <h1 className="d-flex gap-3 align-items-cente">
+          <img
+            src="/note.png"
+            width={45}
+            alt="white note card in red background"
+          />
+          <span>Notlar</span>
+        </h1>
 
         <Link to="/new">
           <Button>Oluştur</Button>
@@ -44,7 +51,7 @@ const Main = ({ notes, availableTags }: Props) => {
       <Form>
         <Row>
           <Col>
-            <Form.Group>
+            <Form.Group controlId="title">
               <Form.Label>Başlığa Göre Ara</Form.Label>
               <Form.Control onChange={(e) => setTitle(e.target.value)} />
             </Form.Group>

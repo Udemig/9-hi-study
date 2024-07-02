@@ -46,13 +46,13 @@ const CustomForm = ({
         {/* Başlık - Etiket Inputu */}
         <Row>
           <Col>
-            <Form.Group>
+            <Form.Group controlId="title">
               <Form.Label>Başlık</Form.Label>
               <Form.Control defaultValue={title} ref={inputRef} />
             </Form.Group>
           </Col>
           <Col>
-            <Form.Group>
+            <Form.Group controlId="tags">
               <Form.Label>Etiketler</Form.Label>
               <ReactSelect
                 onChange={(allTags) => setSelectedTags(allTags as Tag[])}
@@ -76,7 +76,7 @@ const CustomForm = ({
         </Row>
 
         {/* İçerik Alanı */}
-        <Form.Group className="mt-4">
+        <Form.Group controlId="markdown" className="mt-4">
           <Form.Label>İçeirk (markdown destekler)</Form.Label>
           <Form.Control
             defaultValue={markdown}
