@@ -28,6 +28,7 @@ const InputField = ({
           min={min}
           max={max}
           required={required}
+          step={type === "number" && "0.1"}
         />
       )}
     </div>

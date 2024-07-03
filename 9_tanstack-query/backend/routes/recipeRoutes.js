@@ -11,7 +11,9 @@ const { controlId } = require("../middleware");
 const router = express.Router();
 
 // oluşturudğumuz router'ın yollarını ve çalışacak fonksyonlarını tanımlama
-router.route("/api/places").get(getAllRecipes).post(createRecipe);
+router.route("/api/places")
+  .get(getAllRecipes)
+  .post(createRecipe);
 
 router
   .route("/api/place/:id")

@@ -6,8 +6,10 @@ const Features = ({ arr }) => {
       </p>
 
       <div className="grid grid-cols-2 gap-4">
-        {arr.map((i) => (
-          <span className="border bg-zinc-100 py-1 px-2 rounded-md">{i}</span>
+        {arr.map((i, key) => (
+          <span key={key} className="border bg-zinc-100 py-1 px-2 rounded-md">
+            {i}
+          </span>
         ))}
       </div>
     </div>

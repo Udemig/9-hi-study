@@ -1,6 +1,5 @@
-import { MdEventAvailable } from "react-icons/md";
-import { CgUnavailable } from "react-icons/cg";
 import { Link } from "react-router-dom";
+import Availability from "../../components/Availability";
 
 const Card = ({ place }) => {
   // rating rengini belirleme
@@ -14,12 +13,12 @@ const Card = ({ place }) => {
   return (
     <Link
       to={`/place/${place.id}`}
-      className="border rounded-md p-4 grid max-md:grid-cols-6 grid-cols-5 gap-3 min-h-[300px] cursor-pointer"
+      className="border rounded-md p-4 grid grid-cols-6 gap-3 min-h-[300px] cursor-pointer"
     >
-      <div className="max-md:col-span-2">
+      <div className="col-span-2">
         <img
           className="w-full h-full object-cover rounded-lg"
-          src="https://picsum.photos/300/300"
+          src={place.image_url}
         />
       </div>
 
@@ -28,11 +27,7 @@ const Card = ({ place }) => {
           <div className="flex items-center justify-between">
             <h1 className="font-semibold text-2xl">{place.name}</h1>
 
-            {place.availability ? (
-              <MdEventAvailable className="text-xl text-green-700" />
-            ) : (
-              <CgUnavailable className="text-xl text-red-700" />
-            )}
+            <Availability status={place.availability} />
           </div>
           <p>{place.location}</p>
           <div className="flex gap-4">

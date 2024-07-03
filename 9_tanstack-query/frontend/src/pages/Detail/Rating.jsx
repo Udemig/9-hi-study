@@ -15,7 +15,7 @@ const Rating = ({ point }) => {
       : "Çok Kötü";
 
   return (
-    <div className="flex gap-4 items-center mt-4">
+    <div className="flex gap-2 items-center">
       <span className={`${color} text-white p-2 rounded-md`}>{point}</span>
       <span className="font-semibold text-lg">{text}</span>
     </div>
