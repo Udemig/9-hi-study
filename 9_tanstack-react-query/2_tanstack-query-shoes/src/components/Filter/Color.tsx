@@ -1,7 +1,10 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { useSearchParams } from "react-router-dom";
+import { SelectedProps } from "./Size";
 
-const Color = () => {
-  const [selected, setSelected] = useState<string[]>([]);
+const Color = ({selected,setSelected}:SelectedProps) => {
+  const [params, setParams] = useSearchParams();
+
   const colors = [
     { code: "#4A69E2", id: "blue" },
     { code: "#FFA52F", id: "yellow" },
@@ -25,6 +28,18 @@ const Color = () => {
       setSelected([...selected, num]);
     }
   };
+
+  useEffect(() => {
+    if (selected.length > 0) {
+      // seçili renk varsa aralarına , koyup urle ekle
+      params.set("color", selected.join(","));
+      setParams(params);
+    } else {
+      // seçili renk yoksa urlde parametreyi kaldır
+      params.delete("color");
+      setParams(params);
+    }
+  }, [selected]);
 
   return (
     <div>

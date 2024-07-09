@@ -1,6 +1,7 @@
 {
   "shoes": [
     {
+      "id": "shoe1",
       "name": "NIKE AIR ZOOM PEGASUS 38",
       "picture": [
         "https://picsum.photos/404",
@@ -11,12 +12,13 @@
       "description": "Pure Platinum / University Red <br/><br/> Özel indirimlerden hariç tutulmuştur. <br/><br/> Affirm, Klarna veya Afterpay ile faizsiz taksitler halinde ödeme yapın. <br/><br/> Ücretsiz kargo, iade ve değişim için adiClub'a katılın.<br/>",
       "isNew": true,
       "discount": 10,
-      "size": [40, 41, 42],
-      "color": ["blue", "gray"],
+      "size": "40,41,42",
+      "color": "blue,gray",
       "gender": "men",
       "price": 150
     },
     {
+      "id": "shoe2",
       "name": "PUMA ULTRARIDE",
       "picture": [
         "https://picsum.photos/408",
@@ -26,12 +28,13 @@
       ],
       "description": "Black / White <br/><br/> Özel indirimlerden hariç tutulmuştur. <br/><br/> Affirm, Klarna veya Afterpay ile faizsiz taksitler halinde ödeme yapın. <br/><br/> Ücretsiz kargo, iade ve değişim için adiClub'a katılın.<br/>",
       "isNew": true,
-      "size": [38, 39, 40],
-      "color": ["black", "white"],
+      "size": "38,39,40",
+      "color": "black,white",
       "gender": "women",
       "price": 200
     },
     {
+      "id": "shoe3",
       "name": "NEW BALANCE FUELCELL PRISM",
       "picture": [
         "https://picsum.photos/412",
@@ -41,12 +44,13 @@
       ],
       "description": "Light Aluminum / Black <br/><br/> Özel indirimlerden hariç tutulmuştur. <br/><br/> Affirm, Klarna veya Afterpay ile faizsiz taksitler halinde ödeme yapın. <br/><br/> Ücretsiz kargo, iade ve değişim için adiClub'a katılın.<br/>",
       "isNew": false,
-      "size": [41, 42, 43],
-      "color": ["light-gray", "black"],
+      "size": "41,42,43",
+      "color": "light-gray,black",
       "gender": "men",
       "price": 250
     },
     {
+      "id": "shoe4",
       "name": "ASICS GEL-NIMBUS 23",
       "picture": [
         "https://picsum.photos/416",
@@ -56,12 +60,13 @@
       ],
       "description": "Midnight / Champagne <br/><br/> Özel indirimlerden hariç tutulmuştur. <br/><br/> Affirm, Klarna veya Afterpay ile faizsiz taksitler halinde ödeme yapın. <br/><br/> Ücretsiz kargo, iade ve değişim için adiClub'a katılın.<br/>",
       "isNew": false,
-      "size": [40, 42, 43],
-      "color": ["blue", "brown"],
+      "size": "40,42,43",
+      "color": "blue,brown",
       "gender": "women",
       "price": 300
     },
     {
+      "id": "shoe5",
       "name": "SAUCONY ENDORPHIN SPEED",
       "picture": [
         "https://picsum.photos/420",
@@ -71,12 +76,13 @@
       ],
       "description": "Black / Gold <br/><br/> Özel indirimlerden hariç tutulmuştur. <br/><br/> Affirm, Klarna veya Afterpay ile faizsiz taksitler halinde ödeme yapın. <br/><br/> Ücretsiz kargo, iade ve değişim için adiClub'a katılın.<br/>",
       "isNew": true,
-      "size": [38, 40, 42],
-      "color": ["black", "orange"],
+      "size": "38,40,42",
+      "color": "black,orange",
       "gender": "men",
       "price": 350
     },
     {
+      "id": "shoe6",
       "name": "BROOKS GHOST 14",
       "discount": 20,
       "picture": [
@@ -87,12 +93,13 @@
       ],
       "description": "Blue / White <br/><br/> Özel indirimlerden hariç tutulmuştur. <br/><br/> Affirm, Klarna veya Afterpay ile faizsiz taksitler halinde ödeme yapın. <br/><br/> Ücretsiz kargo, iade ve değişim için adiClub'a katılın.<br/>",
       "isNew": true,
-      "size": [39, 40, 41],
-      "color": ["blue", "light-gray"],
+      "size": "39,40,41",
+      "color": "blue,light-gray",
       "gender": "women",
       "price": 400
     },
     {
+      "id": "shoe7",
       "name": "HOKA ONE ONE CLIFTON 8",
       "picture": [
         "https://picsum.photos/428",
@@ -102,12 +109,13 @@
       ],
       "description": "Turquoise / Coral <br/><br/> Özel indirimlerden hariç tutulmuştur. <br/><br/> Affirm, Klarna veya Afterpay ile faizsiz taksitler halinde ödeme yapın. <br/><br/> Ücretsiz kargo, iade ve değişim için adiClub'a katılın.<br/>",
       "isNew": false,
-      "size": [40, 41, 43],
-      "color": ["green", "orange"],
+      "size": "40,41,43",
+      "color": "green,orange",
       "gender": "men",
       "price": 450
     },
     {
+      "id": "shoe8",
       "name": "MIZUNO WAVE RIDER 25",
       "picture": [
         "https://picsum.photos/432",
@@ -117,12 +125,13 @@
       ],
       "description": "White / Silver <br/><br/> Özel indirimlerden hariç tutulmuştur. <br/><br/> Affirm, Klarna veya Afterpay ile faizsiz taksitler halinde ödeme yapın. <br/><br/> Ücretsiz kargo, iade ve değişim için adiClub'a katılın.<br/>",
       "isNew": true,
-      "size": [39, 41, 42],
-      "color": ["gray", "white"],
+      "size": "39,41,42,46",
+      "color": "gray,white",
       "gender": "women",
       "price": 500
     },
     {
+      "id": "shoe9",
       "name": "UNDER ARMOUR HOVR MACHINA",
       "discount": 40,
       "picture": [
@@ -133,12 +142,13 @@
       ],
       "description": "Red / Black <br/><br/> Özel indirimlerden hariç tutulmuştur. <br/><br/> Affirm, Klarna veya Afterpay ile faizsiz taksitler halinde ödeme yapın. <br/><br/> Ücretsiz kargo, iade ve değişim için adiClub'a katılın.<br/>",
       "isNew": false,
-      "size": [38, 40, 43],
-      "color": ["red", "black"],
+      "size": "38,40,43,45",
+      "color": "red,black",
       "gender": "men",
       "price": 550
     },
     {
+      "id": "shoe10",
       "name": "ALTRA TORIN 5",
       "picture": [
         "https://picsum.photos/440",
@@ -148,12 +158,13 @@
       ],
       "description": "Gray / Blue <br/><br/> Özel indirimlerden hariç tutulmuştur. <br/><br/> Affirm, Klarna veya Afterpay ile faizsiz taksitler halinde ödeme yapın. <br/><br/> Ücretsiz kargo, iade ve değişim için adiClub'a katılın.<br/>",
       "isNew": true,
-      "size": [39, 41, 42],
-      "color": ["gray", "blue"],
+      "size": "39,41,42,47",
+      "color": "gray,blue",
       "gender": "women",
       "price": 600
     },
     {
+      "id": "shoe11",
       "name": "REEBOK NANO X1",
       "picture": [
         "https://picsum.photos/444",
@@ -163,12 +174,13 @@
       ],
       "description": "Alloy / Black <br/><br/> Özel indirimlerden hariç tutulmuştur. <br/><br/> Affirm, Klarna veya Afterpay ile faizsiz taksitler halinde ödeme yapın. <br/><br/> Ücretsiz kargo, iade ve değişim için adiClub'a katılın.<br/>",
       "isNew": true,
-      "size": [38, 39, 40],
-      "color": ["dark-gray", "black"],
+      "size": "38,39,40,45",
+      "color": "dark-gray,black",
       "gender": "men",
       "price": 650
     },
     {
+      "id": "shoe12",
       "name": "SALOMON SPEEDCROSS 5",
       "picture": [
         "https://picsum.photos/448",
@@ -176,44 +188,47 @@
         "https://picsum.photos/450",
         "https://picsum.photos/451"
       ],
-      "description": "Black / White <br/><br/> Özel indirimlerden hariç tutulmuştur. <br/><br/> Affirm, Klarna veya Afterpay ile faizsiz taksitler halinde ödeme yapın. <br/><br/> Ücretsiz kargo, iade ve değişim için adiClub'a katılın.<br/>",
+      "description": "Slate / Sky <br/><br/> Özel indirimlerden hariç tutulmuştur. <br/><br/> Affirm, Klarna veya Afterpay ile faizsiz taksitler halinde ödeme yapın. <br/><br/> Ücretsiz kargo, iade ve değişim için adiClub'a katılın.<br/>",
       "isNew": true,
-      "size": [40, 41, 42],
-      "color": ["black", "white"],
+      "size": "40,41,42,44",
+      "color": "gray,blue",
       "gender": "women",
       "price": 700
     },
     {
-      "name": "ON RUNNING CLOUD X",
+      "id": "shoe13",
+      "name": "INOV-8 TERRAULTRA G 270",
       "picture": [
         "https://picsum.photos/452",
         "https://picsum.photos/453",
         "https://picsum.photos/454",
         "https://picsum.photos/455"
       ],
-      "description": "Forest / Jungle <br/><br/> Özel indirimlerden hariç tutulmuştur. <br/><br/> Affirm, Klarna veya Afterpay ile faizsiz taksitler halinde ödeme yapın. <br/><br/> Ücretsiz kargo, iade ve değişim için adiClub'a katılın.<br/>",
-      "isNew": false,
-      "size": [41, 42, 43],
-      "color": ["green", "brown"],
+      "description": "Teal / Lime <br/><br/> Özel indirimlerden hariç tutulmuştur. <br/><br/> Affirm, Klarna veya Afterpay ile faizsiz taksitler halinde ödeme yapın. <br/><br/> Ücretsiz kargo, iade ve değişim için adiClub'a katılın.<br/>",
+      "isNew": true,
+      "size": "38,40,42,45",
+      "color": "blue,yellow",
       "gender": "men",
       "price": 750
     },
     {
-      "name": "MERRELL MOAB 2 VENTILATOR",
+      "id": "shoe14",
+      "name": "MERRELL MOAB 2 VENT",
       "picture": [
         "https://picsum.photos/456",
         "https://picsum.photos/457",
         "https://picsum.photos/458",
         "https://picsum.photos/459"
       ],
-      "description": "Earth / Burnt Orange <br/><br/> Özel indirimlerden hariç tutulmuştur. <br/><br/> Affirm, Klarna veya Afterpay ile faizsiz taksitler halinde ödeme yapın. <br/><br/> Ücretsiz kargo, iade ve değişim için adiClub'a katılın.<br/>",
+      "description": "Walnut / Gold <br/><br/> Özel indirimlerden hariç tutulmuştur. <br/><br/> Affirm, Klarna veya Afterpay ile faizsiz taksitler halinde ödeme yapın. <br/><br/> Ücretsiz kargo, iade ve değişim için adiClub'a katılın.<br/>",
       "isNew": true,
-      "size": [39, 40, 42],
-      "color": ["brown", "orange"],
+      "size": "39,41,43,46",
+      "color": "brown,orange",
       "gender": "women",
       "price": 800
     },
     {
+      "id": "shoe15",
       "name": "LA SPORTIVA BUSHIDO II",
       "picture": [
         "https://picsum.photos/460",
@@ -222,87 +237,11 @@
         "https://picsum.photos/463"
       ],
       "description": "Yellow / Black <br/><br/> Özel indirimlerden hariç tutulmuştur. <br/><br/> Affirm, Klarna veya Afterpay ile faizsiz taksitler halinde ödeme yapın. <br/><br/> Ücretsiz kargo, iade ve değişim için adiClub'a katılın.<br/>",
-      "isNew": false,
-      "size": [40, 41, 42],
-      "color": ["yellow", "black"],
+      "isNew": true,
+      "size": "38,39,40,46",
+      "color": "yellow,black",
       "gender": "men",
       "price": 850
-    },
-    {
-      "name": "ARC'TERYX NORVAN LD 2",
-      "picture": [
-        "https://picsum.photos/464",
-        "https://picsum.photos/465",
-        "https://picsum.photos/466",
-        "https://picsum.photos/467"
-      ],
-      "description": "Helios / Cyan <br/><br/> Özel indirimlerden hariç tutulmuştur. <br/><br/> Affirm, Klarna veya Afterpay ile faizsiz taksitler halinde ödeme yapın. <br/><br/> Ücretsiz kargo, iade ve değişim için adiClub'a katılın.<br/>",
-      "isNew": true,
-      "size": [38, 40, 43],
-      "color": ["blue", "light-gray"],
-      "gender": "women",
-      "price": 900
-    },
-    {
-      "name": "INOV-8 TERRAULTRA G 270",
-      "picture": [
-        "https://picsum.photos/468",
-        "https://picsum.photos/469",
-        "https://picsum.photos/470",
-        "https://picsum.photos/471"
-      ],
-      "description": "Green / Lime <br/><br/> Özel indirimlerden hariç tutulmuştur. <br/><br/> Affirm, Klarna veya Afterpay ile faizsiz taksitler halinde ödeme yapın. <br/><br/> Ücretsiz kargo, iade ve değişim için adiClub'a katılın.<br/>",
-      "isNew": false,
-      "size": [40, 42, 43],
-      "color": ["green", "light-brown"],
-      "gender": "men",
-      "price": 950
-    },
-    {
-      "name": "VIVOBAREFOOT PRIMUS TRAIL FG",
-      "picture": [
-        "https://picsum.photos/472",
-        "https://picsum.photos/473",
-        "https://picsum.photos/474",
-        "https://picsum.photos/475"
-      ],
-      "description": "Dark Gray / Black <br/><br/> Özel indirimlerden hariç tutulmuştur. <br/><br/> Affirm, Klarna veya Afterpay ile faizsiz taksitler halinde ödeme yapın. <br/><br/> Ücretsiz kargo, iade ve değişim için adiClub'a katılın.<br/>",
-      "isNew": true,
-      "size": [39, 41, 42],
-      "color": ["dark-gray", "black"],
-      "gender": "women",
-      "price": 1000
-    },
-    {
-      "name": "DANNER TRAIL 2650",
-      "discount": 15,
-      "picture": [
-        "https://picsum.photos/476",
-        "https://picsum.photos/477",
-        "https://picsum.photos/478",
-        "https://picsum.photos/479"
-      ],
-      "description": "Brown / Red <br/><br/> Özel indirimlerden hariç tutulmuştur. <br/><br/> Affirm, Klarna veya Afterpay ile faizsiz taksitler halinde ödeme yapın. <br/><br/> Ücretsiz kargo, iade ve değişim için adiClub'a katılın.<br/>",
-      "isNew": false,
-      "size": [40, 41, 42],
-      "color": ["brown", "red"],
-      "gender": "men",
-      "price": 1050
-    },
-    {
-      "name": "KEEN TARGHEE III WATERPROOF",
-      "picture": [
-        "https://picsum.photos/480",
-        "https://picsum.photos/481",
-        "https://picsum.photos/482",
-        "https://picsum.photos/483"
-      ],
-      "description": "Black / Olive <br/><br/> Özel indirimlerden hariç tutulmuştur. <br/><br/> Affirm, Klarna veya Afterpay ile faizsiz taksitler halinde ödeme yapın. <br/><br/> Ücretsiz kargo, iade ve değişim için adiClub'a katılın.<br/>",
-      "isNew": true,
-      "size": [39, 40, 42],
-      "color": ["black", "green"],
-      "gender": "women",
-      "price": 1100
     }
   ]
 }
