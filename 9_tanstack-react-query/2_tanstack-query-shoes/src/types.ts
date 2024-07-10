@@ -4,8 +4,8 @@ export interface Shoe {
   picture: string[];
   description: string;
   isNew: boolean;
-  size: number[];
-  color: string[];
+  size: string;
+  color: string;
   gender: "men" | "women";
   price: number;
   id: string;

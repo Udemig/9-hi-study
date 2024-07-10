@@ -1,16 +1,14 @@
 import { Link } from "react-router-dom";
 import { Shoe } from "../../types";
 import Badge from "./Badge";
+import calcDiscount from "../../utils/calcDiscount";
 
 type Props = {
   item: Shoe;
 };
 
 const Card = ({ item }: Props) => {
-  // indirim oranı verisi varsa indirimli fiyatı hesapla
-  const price = item.discount
-    ? item.price - (item.price * item.discount) / 100
-    : item.price;
+  const price = calcDiscount(item.price, item.discount);
 
   return (
     <div className="flex flex-col justify-between">

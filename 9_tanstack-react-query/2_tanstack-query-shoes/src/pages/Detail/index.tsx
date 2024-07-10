@@ -21,19 +21,25 @@ const Detail = () => {
       {isLoading ? (
         <Loader />
       ) : error ? (
-        <Error />
+        <Error message={error.message} />
       ) : (
         data && (
-          <section className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-4">
-            <div className="col-span-2 grid grid-cols-2 gap-4 rounded-[48px] overflow-hidden ">
-              {data?.picture.map((url) => (
-                <img src={url} />
+          <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-4">
+            <div className="lg:col-span-2 h-fit grid grid-cols-2 gap-4 rounded-[48px] overflow-hidden">
+              {data?.picture.map((url, i) => (
+                <img key={i} src={url} />
               ))}
             </div>
             <div className="flex flex-col gap-8">
               <Head data={data} />
-              <Color />
-              <Size />
+              <Color data={data.color} />
+              <Size data={data.size} />
+
+              <p>
+                <h2 className="font-semibold">Bu ürün hakkında</h2>
+
+                <p dangerouslySetInnerHTML={{ __html: data.description }} />
+              </p>
             </div>
           </section>
         )

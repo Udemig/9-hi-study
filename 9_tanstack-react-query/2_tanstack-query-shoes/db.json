@@ -4,10 +4,10 @@
       "id": "shoe1",
       "name": "NIKE AIR ZOOM PEGASUS 38",
       "picture": [
-        "https://picsum.photos/404",
-        "https://picsum.photos/405",
-        "https://picsum.photos/406",
-        "https://picsum.photos/407"
+        "/shoe-4.png",
+        "/shoe-3.png",
+        "/shoe-2.png",
+        "/shoe-1.png"
       ],
       "description": "Pure Platinum / University Red <br/><br/> Özel indirimlerden hariç tutulmuştur. <br/><br/> Affirm, Klarna veya Afterpay ile faizsiz taksitler halinde ödeme yapın. <br/><br/> Ücretsiz kargo, iade ve değişim için adiClub'a katılın.<br/>",
       "isNew": true,

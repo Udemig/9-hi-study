@@ -26,13 +26,20 @@ const List = () => {
       {isLoading ? (
         <Loader />
       ) : error ? (
-        <Error />
+        <Error message={error.message} />
       ) : data ? (
-        <div className="grid grid-cols-2 sm:grid-cols-3 gap-x-4 gap-y-6">
-          {data.map((item) => (
-            <Card key={item.id} item={item} />
-          ))}
-        </div>
+        data.length === 0 ? (
+          <p>
+            Aradığınız kriterlere uygun ürün bulunamadı <br /> Lütfen farklı
+            filtrelemer deneyin veya daha sonra tekrar deneyiniz
+          </p>
+        ) : (
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-x-4 gap-y-6">
+            {data.map((item) => (
+              <Card key={item.id} item={item} />
+            ))}
+          </div>
+        )
       ) : (
         <p className="text-center">Aranılan kriterlere uygun ürün bulunamadı</p>
       )}

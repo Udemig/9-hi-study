@@ -13,7 +13,9 @@ const Header = () => {
         <img className="w-7" src="/bar.svg" />
       </button>
 
-      <img src="/header-logo.svg" />
+      <Link to={"/"}>
+        <img src="/header-logo.svg" />
+      </Link>
 
       <div className="flex items-center gap-[9px] md:gap-[40px]">
         <button className="max-md:hidden">
